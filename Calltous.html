@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShinyShop</title>
+    <link rel="stylesheet" href="./Css/navbaraa.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./Css/Product.css" />
+    <link rel="stylesheet" href="./Css/Footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/addtocard.css" />
+    <link rel="stylesheet" href="./Css/catgory.css" />
+    <link rel="stylesheet" href="./Css/Aboutus.css" />
+    <link rel="stylesheet" href="./Css/icon-6/css/all.css" />
+
+    <style>
+      @font-face {
+        font-family: yekan;
+        src: url(./fonts/ir.ttf);
+      }
+
+      * {
+        font-family: yekan;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 16px;
+        margin: 0px;
+        background-color: #f3f3f3;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      html{
+        scroll-behavior: smooth;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+          <a href="main.html" class="nav__logo"
+            ><img src="./Images/logogg.png" style="max-width: 125px"
+          /></a>
+
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="main.html" class="nav__link">صفحه اصلی</a>
+              </li>
+              <li class="nav__item">
+                <a href="Calltous.html" class="nav__link">تماس با ما</a>
+              </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+              <i class="fa-solid fa-xmark nav__close"></i>
+            </div>
+          </div>
+
+          <div class="nav__actions">
+            <!-- Search button -->
+
+            <i
+              class="fa-solid fa-magnifying-glass nav__search"
+              id="search-btn"
+            ></i>
+            <!--Bag Button-->
+
+            <i class="fa-solid fa-bag-shopping nav__bag" id="bag-btn"></i>
+            <!-- Login button -->
+            <i class="fa-solid fa-user nav__login" id="login-btn"></i>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+
+          <!-- CART  -->
+          <div class="cart">
+            <h2 class="cart-title">سبد خرید</h2>
+
+            <!-- CONTENT  -->
+            <div class="cart-content"></div>
+
+            <!-- TOTAL   -->
+            <div class="total">
+              <div class="total-price">0 تومان</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button type="button" class="btn-buy">خرید</button>
+            <!-- CART CLOSE  -->
+
+            <i class="fa-solid fa-xmark" id="cart-close"></i>
+          </div>
+          <script src="./JS/cart-js.js"></script>
+        </nav>
+      </header>
+      <div class="navbar">
+        <ul>
+          <li><a href="Hoodi.html">هودی</a></li>
+          <li><a href="t-shirt.html">تیشرت</a></li>
+          <li><a href="dors.html">دورس</a></li>
+          <li><a href="shoes.html">کفش</a></li>
+        </ul>
+      </div>
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search">
+        <form action="" class="search__form">
+          <i class="ri-search-line search__icon"></i>
+          <input type="search" placeholder="جستجو کالا" class="search__input" />
+        </form>
+
+        <i class="ri-close-line search__close" id="search-close"></i>
+      </div>
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+        <form action="" class="login__form">
+          <h2 class="login__title">ورود / عضویت</h2>
+
+          <div class="login__group">
+            <div>
+              <label for="email" class="login__label">ایمیل</label>
+              <input
+                type="email"
+                placeholder="ایمیل خود را وارد کنید"
+                id="email"
+                class="login__input"
+              />
+            </div>
+
+            <div>
+              <label for="password" class="login__label">رمز عبور</label>
+              <input
+                type="password"
+                placeholder="کلمه عبور را وارد کنید"
+                id="password"
+                class="login__input"
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="login__signup">
+              حساب کاربری ندارید؟ <a href="" class="signup-btn">ثبت نام</a>
+            </p>
+
+            <button type="submit" class="login__button">ورود</button>
+          </div>
+        </form>
+
+        <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="./JS/javjs.js"></script>
+    </header>
+    <main>
+      <div class="abtus">
+        <div class="abtmain">
+          <div class="ulli">
+            <h1 class="cnt">ارتباط با ما</h1>
+          </div>
+          <div>
+            <ul class="abtuscontent">
+              <li>
+                <i class="ri-home-3-line"></i
+                ><a href="#" class="addres">تهران جاده ساوه گلستان</a>
+              </li>
+              <li>
+                <i class="ri-cellphone-line"></i
+                ><a href="#" class="addres-bottom">09228047204</a>
+              </li>
+              <li>
+                <i class="ri-mail-line"></i
+                ><a href="#" class="addres-bottom">nimabrute@gmail.com</a>
+              </li>
+            </ul>
+            <div class="socialicons">
+              <a
+                href="https://discord.gg/gameyaar-981461400478162985"
+                target="_blank"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nimabrute?igsh=MXB1ZWZyMGQxOWhkbA=="
+                target="_blank"
+              >
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/NimaBrute" target="_blank">
+                <i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://t.me/nimabrute">
+                <i class="fa-brands fa-telegram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15447.395894283678!2d51.17674959189786!3d35.51874195308198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f92092ac506be3b%3A0xae55f234ffc84172!2z2b7amNmI2YfYtNiz2LHYp9uMINi02YfbjNivINi02YfYsduM2KfYsduM!5e0!3m2!1sen!2sus!4v1708087643685!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="direction: ltr">
+      <div class="footer-wrapper">
+        <div class="footer-columns">
+          <div class="footer-logo-column">
+            <a
+              href="/"
+              aria-label="Go to Supabase homepage"
+              title="Go to Supabase Homepage"
+            >
+              <img
+                src=""
+                loading="lazy"
+                alt=""
+                class="footer-logo"
+                width="200"
+              />
+            </a>
+            <div class="social-wrapper">
+              <div class="social-links">
+                <ul>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://twitter.com/NimaBrute"
+                      title="Twitter"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-x"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://github.com/NimaBrute"
+                      title="GitHub"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-github"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://discord.gg/gameyaar-981461400478162985"
+                      title="Discord"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-discord"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                        <path
+                          d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3"
+                        />
+                        <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://youtube.com/@nimabrute"
+                      title="Youtube"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-brand-youtube"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+                        />
+                        <path d="M10 9l5 3l-5 3z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="link-columns">
+            <div>
+              <section>
+                <h3>منو اصلی</h3>
+                <ul>
+                  <li>
+                    <a href="main.html" title="صفحه اصلی">صفحه اصلی</a>
+                  </li>
+                  <li>
+                    <a href="main.html" title="محصولات شاینی شاپ"
+                      >محصولات شاینی شاپ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="main.html" title="حساب کاربری من"
+                      >حساب کاربری من</a
+                    >
+                  </li>
+                  <li>
+                    <a href="main.html" title="صفحه پرداخت">صفحه پرداخت</a>
+                  </li>
+                  <li>
+                    <a href="main.html" title="سبد خرید">سبد خرید</a>
+                  </li>
+                  <li>
+                    <a href="Calltous.html" title="درباره شاینی شاپ"
+                      >درباره شاینی شاپ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Calltous.html" title="تماس با شاینی شاپ"
+                      >تماس با شاینی شاپ</a
+                    >
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bottom part section -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-wrapper">
+          <small>© <span id="year"></span> Supabase Inc.</small>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+  </body>
+</html>

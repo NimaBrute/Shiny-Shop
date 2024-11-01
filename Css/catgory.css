@@ -1,0 +1,59 @@
+@font-face {
+  font-family: yekan;
+  src: url(./fonts/ir.ttf);
+}
+
+* {
+  font-family: yekan;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+.navbar {
+  background-color: #e7e7e7;
+  font-family: Arial;
+  min-width: 100%;
+  text-align: center;
+  position: fixed;
+  cursor: default;
+  margin-top: 88px;
+  padding: 13px;
+  z-index: 999;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  font-size: 16px;
+  color: #333333;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navbar li {
+  display: inline-block;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover {
+  color: #727272;
+  border-bottom: 2px solid #727272;
+}
+@media screen and (max-width: 1023px) {
+  .navbar {
+    position: fixed;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    transition: top 0.4s;
+  }
+}

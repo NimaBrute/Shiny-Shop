@@ -1,0 +1,115 @@
+@font-face {
+  font-family: yekan;
+  src: url(./fonts/ir.ttf);
+}
+
+* {
+  box-shadow: border-box;
+  padding: 0;
+  margin: 0;
+}
+.abtus {
+  width: 100%;
+  height: 710px;
+}
+.abtus,
+.abtmain > h4,
+h1,
+.abtuscontent > li,
+.socialicons {
+  direction: rtl;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.ulli {
+  border-bottom: 1px solid rgba(185, 185, 185, 0.705);
+  margin: 10px;
+}
+
+.abtmain {
+  width: 44%;
+  margin-right: 89px;
+  padding-top: 273px;
+}
+.abtus ul li {
+  padding: 7px;
+}
+.cnt {
+  padding-bottom: 20px;
+}
+.ulli > h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #242424;
+  margin-right: 7px;
+}
+.abtuscontent li .addres {
+  color: #757575;
+}
+.addres-bottom {
+  color: #333;
+}
+.socialicons {
+  border-top: 1px solid rgba(185, 185, 185, 0.705);
+  margin: 10px;
+}
+.abtuscontent {
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+.abtuscontent li i {
+  margin-left: 7px;
+  font-size: 20px;
+  color: #000000;
+}
+.socialicons a {
+  padding-top: 0x;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #000000;
+  transition: color 0.4s;
+}
+.socialicons a:hover {
+  color: #ff893a;
+}
+.socialicons i {
+  margin: 10px;
+}
+@font-face {
+  font-family: yekan;
+  src: url(./fonts/ir.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: yekan;
+}
+.container-map {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.map-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 20.25%;
+}
+iframe {
+  position: absolute;
+  top: 205px;
+  left: 76px;
+  width: 550px;
+  height: 450px;
+  border: none;
+  border-radius: 10px;
+}
